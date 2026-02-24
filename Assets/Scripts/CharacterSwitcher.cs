@@ -1,13 +1,11 @@
 using UnityEngine;
-using UnityEngine.UI; // Required for the Image component
+using UnityEngine.UI;
 
 public class CharacterSwitcher : MonoBehaviour
 {
-    // These are the "slots" where you will drag your character objects
     public GameObject character1; 
     public GameObject character2;
 
-    // This function runs when the Dropdown changes
     public void ChangeCharacter(int index)
     {
         if (index == 0) 
