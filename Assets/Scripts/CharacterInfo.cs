@@ -1,28 +1,34 @@
 using UnityEngine;
 using TMPro;
-using System;
 
-public class CharacterIdentity : MonoBehaviour
+public class CharacterInfo : MonoBehaviour
 {
     public TMP_InputField nameInput;
     public TMP_InputField yearInput;
-    public TMP_Text resultText;
-    
+    public TextMeshProUGUI resultText;
 
-    public void CalculateAgeAndDisplay()
+    public void GenerateResult()
     {
-        string charName = nameInput.text;
-        
-        if (int.TryParse(yearInput.text, out int birthYear))
-        {
-            int currentYear = DateTime.Now.Year;
-            int age = currentYear - birthYear;
+        string pName = nameInput.text;
+        string pYear = yearInput.text;
 
-            resultText.text = $"{charName} is {age} years old!";
-        }
-        else
+        if (int.TryParse(pYear, out int birthYear))
         {
-            resultText.text = "Please add a valid year.";
+            // limits lidz 1900
+            if (birthYear >= 1900 && birthYear <= 2026)
+            {
+                int age = 2026 - birthYear;
+                resultText.text = $"{pName} is {age} years old!";
+
+                nameInput.placeholder.GetComponent<TextMeshProUGUI>().text = pName;
+                yearInput.placeholder.GetComponent<TextMeshProUGUI>().text = pYear;
+                nameInput.text = "";
+                yearInput.text = "";
+            }
+            else
+            {
+                resultText.text = "Please add a valid year.";
+            }
         }
     }
 }
