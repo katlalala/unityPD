@@ -18,11 +18,11 @@ public class CharacterIdentity : MonoBehaviour
             int currentYear = DateTime.Now.Year;
             int age = currentYear - birthYear;
 
-            resultText.text = $"{charName} ir {age} gadus vecs!";
+            resultText.text = $"{charName} is {age} years old!";
         }
         else
         {
-            resultText.text = "Lūdzu, ievadiet derīgu gadu!";
+            resultText.text = "Please add a valid year.";
         }
     }
 }
