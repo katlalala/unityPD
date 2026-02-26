@@ -22,7 +22,7 @@ Interaktīvs 2D saģērbšanas projekts kas izstrādāts Unity vidē. Spēlētā
 Tikai aksesuārus var vairākus uzlikt virsū, pārējos (Outfit, hat, onesie) - nevar, tiem ir limits tikai uz vienu.
 
 ## Palaišanas soļi
-1. Lejupielādējat release sadaļā jaunāko build: [šeit](https://github.com/katlalala/unityPD/releases/new)
+1. Lejupielādējat release sadaļā jaunāko build: [šeit](https://github.com/katlalala/unityPD/releases/tag/Unity)
 2. Kad ir ielādēts, tad atarhivējiet failu datorā ar WinRaR
 3. Palaižat .exe failu
 4. Spēlējat!
