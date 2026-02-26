@@ -19,7 +19,7 @@ Interaktīvs 2D saģērbšanas projekts kas izstrādāts Unity vidē. Spēlētā
 
  ### Otrais tēls
 ![alt text](https://github.com/katlalala/unityPD/blob/main/Ekr%C4%81nuz%C5%86%C4%93mums%202026-02-26%20014758.png?raw=true)
-Tikai aksesuārus var vairākus uzlikt virsū, pārējos (Outfit, hat, onesie) - nevar, tiem ir limits tikai uz vienu.
+Tikai aksesuārus var vairākus uzlikt virsū, pārējos (Outfit, hat, onesie) - nevar, tiem ir limits tikai uz vienu. Var vilkt tikai "Onesie" vai "Outfit", nevar abus tajā pašā laikā vilkt
 
 ## Palaišanas soļi
 1. Lejupielādējat release sadaļā jaunāko build: [šeit](https://github.com/katlalala/unityPD/releases/tag/Unity)
